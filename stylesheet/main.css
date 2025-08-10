@@ -38,3 +38,34 @@ header.title {
     font-weight: 600;
     font-family: var(--source);
 }
+
+#theme-icon {
+    color: var(--text-color)
+}
+
+.button {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.button-ghost:hover {
+    background-color: #92929262;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 12px 80px;
+}
