@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    background: none;
+}
+
+:root {
+    --background: white;
+    --text-color: black;
+    --mulish: "Mulish", Arial, monospace;
+    --source: "Source Code Pro", Arial, monospace
+}
+
+.dark {
+    --background: #000b12;
+    --text-color: white
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color)
+}
+
+
+
+header.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+}
+
+.title h1 {
+    font-size: 24px;
+    padding-top: 2px;
+    font-weight: 600;
+    font-family: var(--source);
+}
