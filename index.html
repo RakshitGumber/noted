@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./stylesheet/main.css" />
+    <link rel="stylesheet" href="./src/stylesheet/main.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,17 +19,21 @@
     <div class="top-bar">
       <header class="title">
         <iconify-icon
-          icon="material-symbols:note-stack-outline"
+          icon="material-symbols:sticky-note-2-rounded"
           id="note-icon"
-          style="font-size: 24px"
+          style="font-size: 36px; color: #b094ff"
         ></iconify-icon>
         <h1>Noted</h1>
       </header>
       <button id="theme-toggle" class="button button-icon button-ghost">
-        <iconify-icon icon="carbon:sun" id="theme-icon"></iconify-icon>
+        <iconify-icon
+          icon="carbon:sun"
+          id="theme-icon"
+          style="font-size: 24px"
+        ></iconify-icon>
       </button>
     </div>
   </body>
-  <script src="./scripts/script.mjs" type="module"></script>
+  <script src="./src/scripts/script.mjs" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
 </html>

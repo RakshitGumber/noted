@@ -9,13 +9,15 @@
 :root {
     --background: white;
     --text-color: black;
+    --border-color: #b9b9b9;
     --mulish: "Mulish", Arial, monospace;
     --source: "Source Code Pro", Arial, monospace
 }
 
 .dark {
     --background: #000b12;
-    --text-color: white
+    --text-color: white;
+    --border-color: #2f2f2f;
 }
 
 body {
@@ -34,9 +36,10 @@ header.title {
 
 .title h1 {
     font-size: 24px;
-    padding-top: 2px;
+    display: flex;
+    align-items: center;
+    font-family: var(--mulish);
     font-weight: 600;
-    font-family: var(--source);
 }
 
 #theme-icon {
@@ -44,7 +47,7 @@ header.title {
 }
 
 .button {
-    font-size: 18px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,8 +57,8 @@ header.title {
 }
 
 .button-icon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
 }
 
 .button-ghost:hover {
@@ -63,9 +66,11 @@ header.title {
 }
 
 .top-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100vw;
-    padding: 12px 80px;
+    padding: 12px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
 }

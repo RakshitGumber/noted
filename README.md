@@ -1,6 +1,6 @@
 # Noted
 
-### Rebuilding from Scratch
+> Rebuilding from Scratch
 
 ---
 
