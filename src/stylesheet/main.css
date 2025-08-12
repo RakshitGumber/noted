@@ -201,7 +201,15 @@ form.note-form {
 .note-item {
     padding: 24px;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-size: 1rem;
     gap: 16px;
-    box-shadow: var(--shadow) 0px 0px 16px;
+    border: 1px solid var(--border-color);
+}
+
+.no-item-placeholder {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
 }
