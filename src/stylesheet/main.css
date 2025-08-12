@@ -48,18 +48,19 @@ header.title {
     header.title {
         display: none;
     }
+
+    .top-bar {
+        padding: 12px;
+    }
 }
 
-#theme-icon {
-    color: var(--text-color)
-}
 
 .button {
     font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    color: var(--text-color);
     border-radius: 4px;
     cursor: pointer;
 }
@@ -75,12 +76,12 @@ header.title {
 
 .top-bar {
     width: 100vw;
-    padding: 12px;
+    padding: 12px 100px;
     height: 60px;
     display: flex;
-    gap: 36px;
+    gap: 70px;
     justify-content: space-between;
-    align-items: center;
+    align-items: space-between;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -99,8 +100,7 @@ a {
 .search-bar {
     display: flex;
     align-items: center;
-    margin-right: auto;
-    width: 250px;
+    width: 400px;
     height: 100%;
 }
 
@@ -111,7 +111,7 @@ a {
     padding: 12px;
     color: var(--text-color);
     border-right: none;
-    border-radius: 8px 0 0 8px;
+    border-radius: 4px 0 0 4px;
     outline: none;
 
 }
@@ -129,11 +129,60 @@ a {
     color: var(--text-color);
     border: 1px solid var(--border-color);
     border-left: none;
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 4px 4px 0;
 }
 
 .search-button label {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+main.container {
+    display: flex;
+    margin: 36px 100px;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+section.note-input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: fit-content;
+    padding-bottom: 36px;
+}
+
+form.note-form {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    justify-content: center;
+    padding: 18px;
+    gap: 24px;
+    color: var(--text-color);
+    border-radius: 4px;
+    width: 500px;
+}
+
+#note-input-box {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-size: 1rem;
+    font-family: var(--mulish);
+    resize: none;
+    field-sizing: content;
+}
+
+#note-input-box::placeholder {
+    color: var(--text-color);
+}
+
+.form-active {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start;
 }

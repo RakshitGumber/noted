@@ -10,3 +10,10 @@ themeToggle.addEventListener("click", () => {
     themeIcon.setAttribute("icon", "carbon:moon");
   }
 });
+
+const noteForm = document.querySelector(".note-form");
+
+noteForm.children.namedItem("submit-button").addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(noteForm.children.namedItem("notes").value);
+});
