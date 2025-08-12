@@ -10,6 +10,7 @@
     --background: white;
     --text-color: black;
     --border-color: #b9b9b9;
+    --input-color: #f1f1f1;
     --mulish: "Mulish", Arial, monospace;
     --source: "Source Code Pro", Arial, monospace
 }
@@ -18,6 +19,7 @@
     --background: #000b12;
     --text-color: white;
     --border-color: #2f2f2f;
+    --input-color: #3f3f3f;
 }
 
 body {
@@ -40,6 +42,12 @@ header.title {
     align-items: center;
     font-family: var(--mulish);
     font-weight: 600;
+}
+
+@media screen and (width < 600px) {
+    header.title {
+        display: none;
+    }
 }
 
 #theme-icon {
@@ -70,7 +78,62 @@ header.title {
     padding: 12px;
     height: 60px;
     display: flex;
+    gap: 36px;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border-color);
+}
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    width: 250px;
+    height: 100%;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    color: var(--text-color);
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+
+}
+
+.search-input::placeholder {
+    color: var(--text-color)
+}
+
+.search-button {
+    height: 100%;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.search-button label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
